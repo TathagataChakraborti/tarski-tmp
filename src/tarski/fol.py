@@ -282,8 +282,8 @@ class FirstOrderLanguage:
         if name in where:
             raise exception(name, where[name])
 
-        if name in self._global_index:
-            raise err.DuplicateDefinition(name, self._global_index[name])
+        # if name in self._global_index:
+        #     raise err.DuplicateDefinition(name, self._global_index[name])
 
     def predicate(self, name: str, *args):
         self._check_name_not_defined(name, self._predicates, err.DuplicatePredicateDefinition)

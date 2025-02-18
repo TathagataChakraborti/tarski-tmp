@@ -1,3 +1,6 @@
+⚠️ This is a fork of Tarski. Please use the main one.
+
+------
 
 # Tarski - An AI Planning Modeling Framework 
 [![Unit Tests](https://github.com/aig-upf/tarski/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/aig-upf/tarski/actions/workflows/unit-tests.yml)

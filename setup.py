@@ -19,9 +19,9 @@ spec.loader.exec_module(version)
 def main():
 
     setup(
-        name='tarski',
+        name='tarski-tmp',
         version=version.__version__,
-        description='Tarski is a framework for the specification, modeling and manipulation of AI planning problems.',
+        description='This is a fork of Tarski, a framework for the specification, modeling and manipulation of AI planning problems.',
         long_description=long_description,
         long_description_content_type='text/markdown',
 
