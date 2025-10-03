@@ -22,7 +22,7 @@ jobs:
       matrix:
         # Currently, we only test on ubuntu, would be good to extend to macos-latest, windows-latest,
         # but this requires a bit of extra work to get the dependencies installed there too
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]
 
         # We run unit tests on all currently active Python releases, see https://www.python.org/downloads/.
         # GH-hosted versions for the Ubuntu image are listed here:
