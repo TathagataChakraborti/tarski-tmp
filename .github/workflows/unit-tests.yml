@@ -33,7 +33,7 @@ jobs:
         # this way, failuares are treated as a warning and don’t fail the whole workflow. This is sometimes referred to
         # as a "shadow CI job".
         # pypy is currently disabled, as it takes a long time to run (>20mins)
-        python-version: ["3.10", "3.11", "3.12"]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
         experimental: [false]
 
         # I'm temporarily disabling the build on the 3.11 alpha, as the installation aims at buiilding the scipy wheel,
@@ -78,7 +78,7 @@ jobs:
       # We run style tests only on the latest active Python releases, see https://www.python.org/downloads/.
       matrix:
         os: [ubuntu-latest]
-        python-version: ['3.12']
+        python-version: ['3.13']
         toxenv: ['docs', 'antlrgrammars', 'pylint', 'flake8', 'mypy']
 
     runs-on: ${{ matrix.os }}
